@@ -1,0 +1,14 @@
+Emulate RPi screen on laptop:
+
+- create ssh tunnel btw RPi and laptop (with ethernet cable):
+	- branch ethernet cable
+	- get RPi's IP with 'arp-scan -l' command
+	- create ssh tunnel 'ssh pi@<rpi-ip>'
+- use SSL/SSH vnc server:
+	- in the RPi terminal ssh-connected, type 'vncserver'
+	- open SSL/SSH VNC Viewer and choose SSH
+	- VNC Host/Display : 'pi@<rpi-ip>:1 and click on connect
+	- enter RPi password
+	- enter VNC password
+
+source : https://www.youtube.com/watch?v=NUHRhNB67F4
